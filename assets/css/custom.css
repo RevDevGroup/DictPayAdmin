@@ -1,0 +1,7 @@
+body {
+	font-family: "Libre Franklin";
+}
+
+.fa-align-left {
+    transform: rotateZ(-90deg);
+}
