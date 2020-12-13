@@ -155,7 +155,7 @@ CSS variables (CSS custom properties)
         should be used.
     */
 
-    --white-bg-color: #ffffff;
+    --white-bg-color: #F0F2F2;
 
     /*
     Dark colors
@@ -182,13 +182,13 @@ CSS variables (CSS custom properties)
     --base-html-font-size: 62.5%; /* 62.5% is used for easier calculations, because the base is now set to 10px, so 1.4rem = 14px for example. */
     --base-html-font-size-1600: 75%; /* For screens with widths >= 1600px */
     --base-html-font-size-1920: 87.5%; /* For screens with widths >= 1920px */
-    --base-font-size: 1.4rem;
+    --base-font-size: 1.6rem;
     --base-line-height: 1.5;
     --base-border-width: 1px;
-    --base-border-radius: 0.4rem;
+    --base-border-radius: 1rem;
     --extra-letter-spacing-size: 0.03rem;
 
-    --lm-base-text-color: rgba(0, 0, 0, 0.85);
+    --lm-base-text-color: #292D2E;
     --lm-base-text-color-light: rgba(0, 0, 0, 0.7);
     --lm-base-body-bg-color: var(--white-bg-color);
     --lm-base-body-bg-image: none;
@@ -225,11 +225,11 @@ CSS variables (CSS custom properties)
 
     /* Blue */
 
-    --blue-color: #1890ff; /* rgba(24, 144, 255, 1) */
+    --blue-color: #2848fb; /* rgba(24, 144, 255, 1) */
     --blue-color-light: #45a3fb;
     --blue-color-very-light: #cfe7fd;
     --blue-color-dark: #0d518f;
-    --blue-color-very-dark: #172636;
+    --blue-color-very-dark: #86416f;
     --blue-box-shadow-color: rgba(24, 144, 255, 0.3);
     --blue-box-shadow-color-darker: rgba(24, 144, 255, 0.6);
     --text-color-on-blue-color-bg: #ffffff;
@@ -325,7 +325,7 @@ CSS variables (CSS custom properties)
 
     /* Primary colors */
 
-    --primary-color: var(--blue-color);
+    --primary-color: #5755d9;
     --primary-color-light: var(--blue-color-light);
     --primary-color-very-light: var(--blue-color-very-light);
     --primary-color-dark: var(--blue-color-dark);
@@ -336,7 +336,7 @@ CSS variables (CSS custom properties)
 
     /* Success colors */
 
-    --success-color: var(--green-color);
+    --success-color: #32b643;
     --success-color-light: var(--green-color-light);
     --success-color-very-light: var(--green-color-very-light);
     --success-color-dark: var(--green-color-dark);
@@ -347,7 +347,7 @@ CSS variables (CSS custom properties)
 
     /* Secondary colors */
 
-    --secondary-color: var(--yellow-color);
+    --secondary-color: #f1f1fc;
     --secondary-color-light: var(--yellow-color-light);
     --secondary-color-very-light: var(--yellow-color-very-light);
     --secondary-color-dark: var(--yellow-color-dark);
@@ -585,7 +585,7 @@ CSS variables (CSS custom properties)
     --navbar-border-width: var(--base-border-width);
     --navbar-horizontal-padding: 1rem;
 
-    --lm-navbar-bg-color: var(--white-bg-color);
+    --lm-navbar-bg-color: #ffffff;
     --lm-navbar-bg-image: none;
     --lm-navbar-border-color: rgba(0, 0, 0, 0.2);
     --lm-navbar-box-shadow: none;
@@ -610,7 +610,7 @@ CSS variables (CSS custom properties)
     --sidebar-width: 26rem;
     --sidebar-border-width: var(--base-border-width);
 
-    --lm-sidebar-bg-color: var(--white-bg-color);
+    --lm-sidebar-bg-color: var(--dark-color);
     --lm-sidebar-bg-image: none;
     --lm-sidebar-border-color: rgba(0, 0, 0, 0.2);
     --lm-sidebar-box-shadow: none;
@@ -648,22 +648,22 @@ CSS variables (CSS custom properties)
     --content-title-font-size: 2rem;
     --content-title-font-weight: 500;
 
-    --card-border-width: var(--base-border-width);
+    --card-border-width: inherit;
     --card-border-radius: var(--base-border-radius);
     --card-title-font-size: var(--content-title-font-size);
     --card-title-font-weight: var(--content-title-font-weight);
 
     --lm-card-text-color: var(--lm-base-text-color);
-    --lm-card-bg-color: var(--white-bg-color);
+    --lm-card-bg-color: #ffffff;
     --lm-card-bg-image: none;
     --lm-card-border-color: rgba(0, 0, 0, 0.2);
-    --lm-card-box-shadow: none;
+    --lm-card-box-shadow: var(--lm-shadow);
 
     --dm-card-text-color: var(--dm-base-text-color);
     --dm-card-bg-color: var(--dark-color);
     --dm-card-bg-image: none;
     --dm-card-border-color: rgba(0, 0, 0, 0.2);
-    --dm-card-box-shadow: var(--lm-card-box-shadow);
+    --dm-card-box-shadow: none;
 
     /* Vertical spacer (Height same as content and card spacing) */
 
@@ -677,11 +677,11 @@ CSS variables (CSS custom properties)
     ---------------------------------------------------------------------------
     */
     
-    --lm-link-text-color: var(--primary-color);
-    --lm-link-text-color-hover: var(--primary-color-light);
+    --lm-link-text-color: var(--primary-color-light);
+    --lm-link-text-color-hover: var(--primary-color-very-light);
 
-    --dm-link-text-color: var(--primary-color);
-    --dm-link-text-color-hover: var(--primary-color-light);
+    --dm-link-text-color: var(--primary-color-light);
+    --dm-link-text-color-hover: var(--primary-color-very-light);
 
 
     /*
@@ -1918,13 +1918,13 @@ CSS variables (CSS custom properties)
     --sidebar-link-border-width: 0;
     --sidebar-link-border-radius: 0;
 
-    --lm-sidebar-link-text-color: var(--lm-base-text-color-light);
+    --lm-sidebar-link-text-color: var(--dm-base-text-color-light);
     --lm-sidebar-link-bg-color: transparent;
     --lm-sidebar-link-border-color: transparent;
-    --lm-sidebar-link-text-color-hover: var(--lm-base-text-color);
+    --lm-sidebar-link-text-color-hover: var(--dm-base-text-color);
     --lm-sidebar-link-bg-color-hover: transparent;
     --lm-sidebar-link-border-color-hover: transparent;
-    --lm-sidebar-link-text-color-active: var(--primary-color);
+    --lm-sidebar-link-text-color-active: var(--primary-color-light);
     --lm-sidebar-link-bg-color-active: transparent;
     --lm-sidebar-link-border-color-active: transparent;
     --lm-sidebar-link-text-color-active-hover: var(--primary-color-light);
@@ -1937,7 +1937,7 @@ CSS variables (CSS custom properties)
     --dm-sidebar-link-text-color-hover: var(--dm-base-text-color);
     --dm-sidebar-link-bg-color-hover: transparent;
     --dm-sidebar-link-border-color-hover: transparent;
-    --dm-sidebar-link-text-color-active: var(--primary-color);
+    --dm-sidebar-link-text-color-active: var(--primary-color-light);
     --dm-sidebar-link-bg-color-active: transparent;
     --dm-sidebar-link-border-color-active: transparent;
     --dm-sidebar-link-text-color-active-hover: var(--primary-color-light);
@@ -1948,7 +1948,7 @@ CSS variables (CSS custom properties)
     --sidebar-divider-padding: 0;
     --sidebar-divider-margin: var(--sidebar-item-vertical-spacing) var(--sidebar-item-horizontal-spacing);
 
-    --lm-sidebar-divider-bg-color: var(--lm-horizontal-rule-color);
+    --lm-sidebar-divider-bg-color: var(--dm-horizontal-rule-color);
 
     --dm-sidebar-divider-bg-color: var(--dm-horizontal-rule-color);
 
@@ -1957,7 +1957,7 @@ CSS variables (CSS custom properties)
     --sidebar-title-font-size: 1.5rem;
     --sidebar-title-font-weight: var(--content-title-font-weight);
 
-    --lm-sidebar-title-text-color: var(--lm-base-text-color);
+    --lm-sidebar-title-text-color: var(--dm-base-text-color);
 
     --dm-sidebar-title-text-color: var(--dm-base-text-color);
 
@@ -1967,18 +1967,18 @@ CSS variables (CSS custom properties)
     --sidebar-icon-border-width: 0;
     --sidebar-icon-border-radius: var(--base-border-radius);
 
-    --lm-sidebar-icon-text-color: var(--lm-base-text-color-light);
+    --lm-sidebar-icon-text-color: var(--dm-base-text-color-light);
     --lm-sidebar-icon-bg-color: rgba(0, 0, 0, 0.05);
     --lm-sidebar-icon-border-color: transparent;
-    --lm-sidebar-icon-text-color-hover: var(--lm-base-text-color);
-    --lm-sidebar-icon-bg-color-hover: var(--lm-sidebar-icon-bg-color);
-    --lm-sidebar-icon-border-color-hover: var(--lm-sidebar-icon-border-color);
-    --lm-sidebar-icon-text-color-active: var(--lm-sidebar-icon-text-color);
-    --lm-sidebar-icon-bg-color-active: var(--lm-sidebar-icon-bg-color);
-    --lm-sidebar-icon-border-color-active: var(--lm-sidebar-icon-border-color);
-    --lm-sidebar-icon-text-color-active-hover: var(--lm-sidebar-icon-text-color-hover);
-    --lm-sidebar-icon-bg-color-active-hover: var(--lm-sidebar-icon-bg-color-hover);
-    --lm-sidebar-icon-border-color-active-hover: var(--lm-sidebar-icon-border-color-hover);
+    --lm-sidebar-icon-text-color-hover: var(--dm-base-text-color);
+    --lm-sidebar-icon-bg-color-hover: var(--dm-sidebar-icon-bg-color);
+    --lm-sidebar-icon-border-color-hover: var(--dm-sidebar-icon-border-color);
+    --lm-sidebar-icon-text-color-active: var(--dm-sidebar-icon-text-color);
+    --lm-sidebar-icon-bg-color-active: var(--dm-sidebar-icon-bg-color);
+    --lm-sidebar-icon-border-color-active: var(--dm-sidebar-icon-border-color);
+    --lm-sidebar-icon-text-color-active-hover: var(--dm-sidebar-icon-text-color-hover);
+    --lm-sidebar-icon-bg-color-active-hover: var(--dm-sidebar-icon-bg-color-hover);
+    --lm-sidebar-icon-border-color-active-hover: var(--dm-sidebar-icon-border-color-hover);
 
     --dm-sidebar-icon-text-color: var(--dm-base-text-color-light);
     --dm-sidebar-icon-bg-color: rgba(255, 255, 255, 0.05);
@@ -2000,8 +2000,8 @@ CSS variables (CSS custom properties)
     --sidebar-brand-image-height: var(--navbar-brand-image-height);
     --sidebar-brand-image-margin-right: var(--navbar-brand-image-margin-right);
 
-    --lm-sidebar-brand-text-color: var(--lm-base-text-color);
-    --lm-sidebar-brand-text-color-hover: var(--lm-base-text-color-light);
+    --lm-sidebar-brand-text-color: var(--dm-base-text-color);
+    --lm-sidebar-brand-text-color-hover: var(--dm-base-text-color-light);
 
     --dm-sidebar-brand-text-color: var(--dm-base-text-color);
     --dm-sidebar-brand-text-color-hover: var(--dm-base-text-color-light);
